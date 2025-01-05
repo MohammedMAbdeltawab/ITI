@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root{
+
+--Cyan: hsl(179, 62%, 43%);
+--DarkCyan: hsl(179, 66%, 36%);
+--BrightYellow: hsl(71, 73%, 54%);
+--DarkBrightYellow: hsl(71, 54%, 45%);
+--LightGray: hsl(204, 43%, 93%);
+--GrayishBlue: hsl(218, 22%, 67%);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+background-color: var(--LightGray);
+min-height: 100vh;
+font-family: "Karla", serif;
+font-size: 16px;
+display: flex;
+justify-content: center;
+align-items: center;
+line-height: 2em;
+font-weight: 700;
+}
+.container {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0px 15px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--Cyan);
+    border-bottom-right-radius:12px ;
+    border-bottom-left-radius:12px ;
+    overflow: hidden;
+    color: white;
+    
+  }
+  
+.details{
+    background-color: white;
+ border-top-left-radius:12px ;
+ border-top-right-radius:12px ;
+    padding:40px 50px;
+    overflow: hidden;   
+ 
+
+}
+.details h3{
+    color: var(--Cyan);
+}
+.details h4{
+    color: var(--BrightYellow);
+}
+.details p{
+    color: var(--GrayishBlue);
+    line-height: 1.7em;
+}
+
+.subscription{
+    background-color: var(--DarkCyan);
+    max-width: 340px;
+    padding: 40px 50px;
+    
+}
+.subscription h3{
+    margin-bottom: 12px;
+}
+.subscription .priceplan{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    column-gap: 15px;
+    margin-bottom: 12px;
+}
+.subscription .priceplan .price{
+    font-size: 30px; 
+}
+.subscription .priceplan .plan{
+    color: var(--GrayishBlue);
+}
+.subscription p{
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+.subscription button{
+    width: 100%;
+    background-color: var(--BrightYellow);
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+.subscription button:hover{
+    background-color: var(--DarkBrightYellow);
+}
+.WhyUs{
+    background-color: var(--Cyan);
+    max-width: 340px;
+    padding: 20px 40px 50px;
+}
+.WhyUs h3{
+    margin: 20px 0px;
+}
+.WhyUs p{
+    line-height: 1.3em;
+    color: var(--LightGray);
+}
+
+
+
+
+
+@media only screen and (max-width:700px) {
+
+    .grid{
+        max-width: 700px;
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: var(--LightGray);
+        border-bottom-right-radius:12px ;
+        border-bottom-left-radius:12px ;
+        overflow: hidden;
+        color: white;
+        justify-content: center;
+        text-align: center;
+      }
+      .details{
+
+        max-width: 340px;
+      }
+    
+}
