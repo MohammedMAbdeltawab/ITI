@@ -1,0 +1,50 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+img{
+    height: 320px;
+    width: 222px;
+}
+.item{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.item-caption{
+    background-color: rgba(240, 248, 255,0.4);
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    bottom: 5%;
+}
+
+.lightbox-container{
+    position: fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color: rgba(0,0 ,0,0.6);
+    
+  }
+  .lightbox-item{
+    position:absolute;
+    width:50%;
+    height: 400px;
+    background-color: tomato;
+    background-image: none;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;
+  }
+  .fa-circle-xmark{
+    position:absolute;
+    right:0px;
+    top:0px;
+}
+i{
+      font-size: 1.7rem;
+      margin : 0.5rem;
+  }
