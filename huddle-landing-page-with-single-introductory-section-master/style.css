@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --SoftMagenta: hsl(300, 69%, 71%);
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--Violet);
+  background-image: url("../images/bg-desktop.svg");
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  width: 90%;
+  padding: 10px 5%;
+}
+header {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+main {
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+}
+
+main h1 {
+  font-weight: 800;
+  font-size: 38px;
+}
+main .MainImage {
+  padding: 30px;
+}
+main .details {
+  padding: 10px 10px 0px;
+}
+main .RegisterBtn {
+  color: var(--Violet);
+  border-radius: 25px;
+  padding: 15px 70px;
+  margin: 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+}
+
+main .RegisterBtn:hover {
+  color: #fff;
+  background-color: var(--SoftMagenta);
+  
+}
+footer {
+  display: flex;
+  justify-content: right;
+  text-align: right;
+}
+
+footer .Links {
+  display: flex;
+  right: 100px;
+  bottom: 1px;
+}
+footer .Links div i {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    margin-right: 20px;
+
+}
+footer .Links div i:hover {
+ 
+  color: var(--SoftMagenta);
+  background-color: #fff;
+  border:3px solid var(--SoftMagenta);
+  border-radius: 50px;
+}
+
+@media only screen and (max-width: 800px){
+    body{
+        background-color: url("images/bg-mobile.svg");
+    }
+  main {
+    display: block;
+  }
+  main .MainImage {
+    margin-left: 0px;
+    margin-right: 10px;
+    width:100%;
+  }
+  main .MainImage img{
+    width:100%;
+  }
+  main .details {
+    display: block;
+    justify-content: center;
+    text-align: center;
+  }
+  footer{
+    justify-content: center;
+    text-align: center;
+  }
+ 
+}
